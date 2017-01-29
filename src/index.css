@@ -6857,8 +6857,8 @@ button.close {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('fonts//fontawesome-webfont.eot?v=4.5.0');
-  src: url('fonts//fontawesome-webfont.eot?v=4.5.0#iefix') format('embedded-opentype'), url('fonts//fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('fonts//fontawesome-webfont.woff?v=4.5.0') format('woff'), url('fonts//fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('fonts//fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  src: url('src/fonts//fontawesome-webfont.eot?v=4.5.0');
+  src: url('src/fonts//fontawesome-webfont.eot?v=4.5.0#iefix') format('embedded-opentype'), url('src/fonts//fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('src/fonts//fontawesome-webfont.woff?v=4.5.0') format('woff'), url('src/fonts//fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('src/fonts//fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -10026,7 +10026,7 @@ span.css-emoticon.nintendo-controller {
 .colorpicker-saturation {
   width: 100px;
   height: 100px;
-  background-image: url("img//saturation.png");
+  background-image: url("src/img//saturation.png");
   cursor: crosshair;
   float: left;
 }
@@ -10068,10 +10068,10 @@ span.css-emoticon.nintendo-controller {
   margin-top: -1px;
 }
 .colorpicker-hue {
-  background-image: url("img//hue.png");
+  background-image: url("src/img//hue.png");
 }
 .colorpicker-alpha {
-  background-image: url("img//alpha.png");
+  background-image: url("src/img//alpha.png");
   display: none;
 }
 .colorpicker {
@@ -10138,7 +10138,7 @@ span.css-emoticon.nintendo-controller {
   height: 10px;
   margin-top: 5px;
   clear: both;
-  background-image: url("img//alpha.png");
+  background-image: url("src/img//alpha.png");
   background-position: 0 100%;
 }
 .colorpicker-color div {
@@ -10269,7 +10269,7 @@ div.dataTables_scrollHead table.table-bordered {
 /*
  * TableTools styles
  */
-/* conflicting styles with bootstrap 
+/* conflicting styles with bootstrap
 .table tbody tr.active td,
 .table tbody tr.active th {
 	background-color: #08C;
@@ -10283,7 +10283,7 @@ div.dataTables_scrollHead table.table-bordered {
 
 .table tbody tr.active a {
 	color: white;
-} 
+}
 
 .table-striped tbody tr.active:nth-child(odd) td,
 .table-striped tbody tr.active:nth-child(odd) th {
@@ -10578,7 +10578,7 @@ div.ColVis_catcher {
  * Language:    Javascript
  * License:     GPL v2 / 3 point BSD
  * Project:     DataTables
- * 
+ *
  * Copyright 2009-2012 Allan Jardine, all rights reserved.
  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -11799,12 +11799,12 @@ body.fd-slider-drag-horizontal * {
 }
 /*
 	 Sample tooltip code. Only works on grade A browsers (so no IE6,7 or 8).
-	
+
 	 See: http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/ for full info on
 	 how to style generated content & the associated pitfalls
-	
+
 	 This code to be taken as experimental & untested - use at your discretion
-	
+
 	 If showing the tooltip above the sider handle you are relegated to showing
 	 single line tooltips due to styling constraints!
 	 */
@@ -11835,7 +11835,7 @@ body.fd-slider-drag-horizontal * {
 	 The tooltip body - as we position it above the slider and position the tooltip arrow
 	 below it, we need to know the height of the body. This means that multi-line tooltips
 	 are not supported.
-	
+
 	 To support multi-line tooltips, you will need to position the tooltip below the slider
 	 and the tooltip pointer above the tooltip body. Additionally, you will have to set the
 	 tooltip bodies "height" to auto
@@ -13191,14 +13191,14 @@ be a descendant of the grid when it is being dragged.
 /*
 
 	 Copyright 2013 - SmartAdmin : WebApp (Sunny)
-	
+
 	 * This is part of an item on wrapbootstrap.com
 	 * https://wrapbootstrap.com/user/myorange
 	 * ==================================
-	
+
 	 Table of Contents
 	 ---------------------------------------------------------------
-	
+
 	 - Main
 	 - Header
 	 - Content
@@ -13213,7 +13213,7 @@ be a descendant of the grid when it is being dragged.
 	 - Clearfix
 	 - Examples (minimalistic in grid)
 	 - Examples (lists)
-	
+
 	 */
 /*
 	 * MAIN
@@ -13563,7 +13563,7 @@ body.nooverflow {
 	 * WIDGET BODY AJAX LOAD
 	 */
 .widget-body-ajax-loading::before {
-  content: url('img//ajax-loader.gif');
+  content: url('src/img//ajax-loader.gif');
   padding-top: 18%;
   text-align: center;
   font-weight: bold;
@@ -13846,9 +13846,9 @@ body.nooverflow {
 .jarviswidget-color-greenLight .nav-tabs li a:hover {
   color: #333 !important;
 }
-/* 
+/*
 	 * WIDGET COLOR DROPDOWN
-	 * 
+	 *
 	 */
 .color-select {
   list-style: none;
@@ -13927,8 +13927,8 @@ body.nooverflow {
 }
 /*
 	 * RTL - SUPPORT
-	 
-	
+
+
 	.rtl .jarviswidget > header {
 		padding: 0 7px 0 0;
 	}
@@ -14195,7 +14195,7 @@ body.nooverflow {
   top: 3px !important;
 }
 /*
- * Enhancements for other plugins 
+ * Enhancements for other plugins
  */
 #jarviswidget-fullscreen-mode .fc-grid .fc-day-number {
   padding: 5px 12px;
@@ -14566,7 +14566,7 @@ button.jcrop-box {
 /* Selection Border */
 .jcrop-vline,
 .jcrop-hline {
-  background: #ffffff url("img//jcrop/Jcrop.gif");
+  background: #ffffff url("src/img//jcrop/Jcrop.gif");
   font-size: 0;
   position: absolute;
 }
@@ -14737,7 +14737,7 @@ img.jcrop-preview {
 }
 .jcrop-dragbar,
 .jcrop-border {
-  background: #ffffff url("img//jcrop/Jcrop.gif");
+  background: #ffffff url("src/img//jcrop/Jcrop.gif");
   position: absolute;
 }
 .jcrop-border.ord-n,
@@ -15954,11 +15954,11 @@ a.clearsearchclass {
   top: 34%;
 }
 .select2-search input.select2-active {
-  background: #fff url('img//select2-spinner.gif') no-repeat 100%;
-  background: url('img//select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
-  background: url('img//select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url('img//select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
-  background: url('img//select2-spinner.gif') no-repeat 100%, linear-gradient(top, #fff 85%, #eee 99%);
+  background: #fff url('src/img//select2-spinner.gif') no-repeat 100%;
+  background: url('src/img//select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+  background: url('src/img//select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url('src/img//select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+  background: url('src/img//select2-spinner.gif') no-repeat 100%, linear-gradient(top, #fff 85%, #eee 99%);
 }
 .select2-container--open .select2-selection,
 .select2-container-active .select2-choice,
@@ -16108,7 +16108,7 @@ disabled look for disabled choices in the results dropdown
   display: none;
 }
 .select2-more-results.select2-active {
-  background: #f4f4f4 url('img//select2-spinner.gif') no-repeat 100%;
+  background: #f4f4f4 url('src/img//select2-spinner.gif') no-repeat 100%;
 }
 .select2-more-results {
   background: #f4f4f4;
@@ -16179,7 +16179,7 @@ disabled look for disabled choices in the results dropdown
   background: transparent !important;
 }
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
-  background: #fff url('img//select2-spinner.gif') no-repeat 100% !important;
+  background: #fff url('src/img//select2-spinner.gif') no-repeat 100% !important;
 }
 .select2-default {
   color: #999 !important;
@@ -16610,7 +16610,7 @@ disabled look for disabled choices in the results dropdown
   color: #C2C2C2;
   border-radius: 5px;
 }
-/*! X-editable - v1.5.0 
+/*! X-editable - v1.5.0
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
@@ -16659,7 +16659,7 @@ disabled look for disabled choices in the results dropdown
   width: 30px;
 }
 .editableform-loading {
-  background: url('img//loading.gif') center center no-repeat;
+  background: url('src/img//loading.gif') center center no-repeat;
   height: 25px;
   width: auto;
   min-width: 25px;
@@ -16714,7 +16714,7 @@ disabled look for disabled choices in the results dropdown
 }
 /* IOS-style clear button for text inputs */
 .editable-clear-x {
-  background: url('img//clear.png') center center no-repeat;
+  background: url('src/img//clear.png') center center no-repeat;
   display: block;
   width: 13px;
   height: 13px;
@@ -18137,7 +18137,7 @@ a.editable-click.editable-disabled:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 .voice-command-active.service-allowed #speech-btn > :first-child > a {
-  background: url('img//voicecommand/active-btn.gif') no-repeat center center #0E70CA;
+  background: url('src/img//voicecommand/active-btn.gif') no-repeat center center #0E70CA;
   border: 1px solid #125A9C;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -22079,30 +22079,30 @@ a.editable-click.editable-disabled:hover {
 .ui-icon {
   width: 16px;
   height: 16px;
-  background-image: url("img//jqueryui/ui-icons_222222_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_222222_256x240.png");
 }
 .ui-widget-content .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_222222_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_222222_256x240.png");
 }
 .ui-widget-header .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_222222_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_222222_256x240.png");
 }
 .ui-state-default .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_888888_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_888888_256x240.png");
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_454545_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_454545_256x240.png");
 }
 .ui-state-active .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_454545_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_454545_256x240.png");
 }
 .ui-state-highlight .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_2e83ff_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_2e83ff_256x240.png");
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-  background-image: url("img//jqueryui/ui-icons_f6cf3b_256x240.png");
+  background-image: url("src/img//jqueryui/ui-icons_f6cf3b_256x240.png");
 }
 /* positioning */
 .ui-icon-carat-1-n {
@@ -24318,7 +24318,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 .flag {
   width: 16px;
   height: 11px;
-  background: url("img//flags/flags.png") no-repeat;
+  background: url("src/img//flags/flags.png") no-repeat;
   margin-top: -0.18em;
   display: inline-block;
 }
@@ -25425,7 +25425,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 }
 /*
  * JS SLIDER
- * Copied from: js/plugin/noUiSlider/jquery.nouislider.css 
+ * Copied from: js/plugin/noUiSlider/jquery.nouislider.css
  */
 /*	General CSS resets;
  *		The target itself is not affected, allowing
@@ -25699,7 +25699,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
   font-size: 21px;
   color: #999;
 }
-/* 
+/*
  * RIBBON
  */
 .ribbon {
@@ -27109,7 +27109,7 @@ textarea.clone {
 }
 /*
 		 * date picker
-		
+
 		.ui-datepicker {
 			display: none;
 			padding: 10px 12px;
@@ -27164,19 +27164,19 @@ textarea.clone {
 			text-align:center;
 		}
 		.ui-datepicker-unselectable.ui-state-disabled {
-			
+
 		}
 		.ui-datepicker-unselectable.ui-state-disabled > span {
 			color:#bfbfbf;
 			background-color: #FAFCFD;
 		}
-		
+
 		.ui-datepicker-calendar a:hover {
 			background: #3276B1;
 			color:#fff;
 		}
 		.ui-datepicker-calendar span {
-			
+
 		}
 		.ui-datepicker-today a {
 			font-weight: 700;
@@ -27406,7 +27406,7 @@ textarea.clone {
   margin: 0;
 }
 #extr-page .hero {
-  background-image: url("img//gradient/login.png");
+  background-image: url("src/img//gradient/login.png");
   background-repeat: no-repeat;
   background-position: 0 137px;
   height: 360px;
@@ -27787,7 +27787,7 @@ td.fc-other-month,
   display: block;
   opacity: 1 !important;
 }
-/* 
+/*
 	* Drag and drop events
 	*/
 #external-events > li {
@@ -29044,14 +29044,14 @@ html {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: url('img//mybg.png') #ffffff;
+  background: url('src/img//mybg.png') #ffffff;
   position: relative;
 }
 body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: url('img//mybg.png') #ffffff;
+  background: url('src/img//mybg.png') #ffffff;
   direction: ltr;
 }
 /* when mobile menu is active */
@@ -29665,7 +29665,7 @@ nav ul li.active.open > a:before {
 nav > ul > li:last-child.open {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-/* All levels 
+/* All levels
 nav ul li {
 	overflow: hidden;
 }*/
@@ -30317,7 +30317,7 @@ input[type="url"].ui-autocomplete-loading,
 input[type="search"].ui-autocomplete-loading,
 input[type="tel"].ui-autocomplete-loading,
 input[type="color"].ui-autocomplete-loading {
-  background-image: url("img//select2-spinner.gif") !important;
+  background-image: url("src/img//select2-spinner.gif") !important;
   background-repeat: no-repeat;
   background-position: 99% 50%;
   padding-right: 27px;
@@ -32843,7 +32843,7 @@ img.away {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-image: url('img//pattern/overlay-pattern.png');
+  background-image: url('src/img//pattern/overlay-pattern.png');
 }
 .progress-striped .progress-bar {
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -33945,7 +33945,7 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
 /*
  * ANIMATED
  */
-/* Navigation icon first level 
+/* Navigation icon first level
 .desktop-detected nav > ul > li > a:hover i {
 	-webkit-animation-name: wobble;
 	-moz-animation-name: wobble;
@@ -34137,10 +34137,10 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
 }
 /*
  * SmartAdmin Colorblind CSS
- * Description: This is an experimental CSS based on 
+ * Description: This is an experimental CSS based on
  * several design factors and pointers derived from
  * http://blog.templatemonster.com/2012/03/21/designing-colorblind-friendly-website/
- * 
+ *
  * While this may not be 100% accurate, but makes
  * SmartAdmin's components much more accessable
  * for the colorblind
@@ -34156,19 +34156,19 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
 }
 .colorblind-friendly .alert-danger,
 .colorblind-friendly .btn-danger {
-  background-image: url('img//colorblind-friendly/pt1.png');
+  background-image: url('src/img//colorblind-friendly/pt1.png');
   border-color: #272727;
   background-color: #303030;
 }
 .colorblind-friendly .alert-success,
 .colorblind-friendly .btn-success {
-  background-image: url('img//colorblind-friendly/pt2.png');
+  background-image: url('src/img//colorblind-friendly/pt2.png');
   border-color: #FF00EB;
   background-color: #1E5E00;
 }
 .colorblind-friendly .alert-warning,
 .colorblind-friendly .btn-warning {
-  background-image: url('img//colorblind-friendly/pt3.png');
+  background-image: url('src/img//colorblind-friendly/pt3.png');
   border-color: #5F4415;
   background-color: #A07A00;
 }
@@ -34270,7 +34270,7 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
     padding-left: 30px;
     padding-right: 30px;
   }
-  /* added new class per version 1.3 
+  /* added new class per version 1.3
 	html, body {
 		overflow-x: hidden !important;
 	}*/
@@ -35444,7 +35444,7 @@ body.menu-on-top.fixed-header.fixed-navigation.fixed-ribbon #ribbon {
 }
 /*
  * Menu on top invisible
- * applying this class will make these elements invisible 
+ * applying this class will make these elements invisible
  * when menu on top is enabled
  */
 .menu-on-top .top-menu-invisible {

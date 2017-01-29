@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body ng-cloak>
+
+<div ui-view="layout"></div>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+
+<script>
+  System.import('./src/index.js').then(function (reference) {
+    angular.bootstrap(document.body, [
+      reference.default.name
+    ]);
+  });
+</script>
+</body>
+</html>

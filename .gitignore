@@ -1,0 +1,8 @@
+.DS_Store
+/jspm_packages/
+/node_modules/
+/.idea/
+/npm-debug.log
+/esdoc/
+/src/components/smart/
+/src/components/default/

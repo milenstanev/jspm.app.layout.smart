@@ -11,22 +11,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "dist/index.bundle.js": [
-      "src/index.js",
-      "src/Ctrl.js",
-      "npm:babel-runtime@5.8.38/helpers/class-call-check.js",
-      "src/partials/navigation.tpl.html!github:systemjs/plugin-text@0.0.9.js",
-      "src/partials/footer.tpl.html!github:systemjs/plugin-text@0.0.9.js",
-      "src/partials/header.tpl.html!github:systemjs/plugin-text@0.0.9.js",
-      "src/index.html!github:systemjs/plugin-text@0.0.9.js",
-      "src/index.css!github:systemjs/plugin-css@0.1.32.js",
-      "github:angular-ui/ui-router@0.4.2.js",
-      "github:angular-ui/ui-router@0.4.2/release/angular-ui-router.js",
-      "github:angular/bower-angular@1.6.1.js",
-      "github:angular/bower-angular@1.6.1/angular.js"
-    ]
-  },
 
   map: {
     "angular": "github:angular/bower-angular@1.6.1",

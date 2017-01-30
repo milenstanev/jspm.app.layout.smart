@@ -8,9 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "./node_modules/.bin/jspm install -y",
     "jspm-link": "./node_modules/.bin/jspm link -y",
-    "jspm-update": "./node_modules/.bin/jspm update && ./node_modules/.bin/jspm clean",
-    "jspm-unbundle": "./node_modules/.bin/jspm unbundle",
-    "jspm-bundle": "./node_modules/.bin/jspm bundle src/index.js dist/index.bundle.js --inject --minify --no-mangle"
+    "jspm-update": "./node_modules/.bin/jspm update && ./node_modules/.bin/jspm clean"
   },
   "author": "",
   "license": "ISC",

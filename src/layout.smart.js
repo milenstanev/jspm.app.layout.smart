@@ -1,9 +1,9 @@
 import angular from 'angular'
 import 'angular-ui/ui-router';
 
-import './index.css!';
+import './layout.smart.css!';
 
-import layoutHtml from './index.html!text';
+import layoutHtml from './layout.smart.html!text';
 import headerHtml from  './partials/header.tpl.html!text';
 import footerHtml from  './partials/footer.tpl.html!text';
 import navigationHtml from  './partials/navigation.tpl.html!text';

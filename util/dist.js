@@ -1,4 +1,3 @@
-const fs = require('fs');
 const Builder = require('systemjs-builder');
 
 /**
@@ -7,7 +6,7 @@ const Builder = require('systemjs-builder');
  * .. -> debug, run as node file
  * @type {string}
  */
-const baseUrl = '..';
+const baseUrl = '.';
 /**
  * Configure builder paths
  */
@@ -20,20 +19,39 @@ builder.config({
     },
     'angular-ui/ui-router': {
       build: false
-    }
+    },
+    'christopherthielen/ui-router-extras': {
+      build: false
+    },
+    'css': {
+      build: false
+    },
+    'distros/bootstrap-less': {
+      build: false
+    },
+    'json': {
+      build: false
+    },
+    'less': {
+      build: false
+    },
+    'ocombe/ocLazyLoad': {
+      build: false
+    },
+    'text': {
+      build: false
+    },
   }
 });
 
-
 builder
   .buildStatic(
-    `${baseUrl}/src/index.js`,
+    `${baseUrl}/index.js`,
     `${baseUrl}/dist/index.dist.js`,
     {
-      inject: true,
-      minify: true,
-      mangle: false,
+      minify: false,
       sourceMaps: true,
+      mangle: false,
       format: 'umd',
       runtime: false
     }
@@ -43,4 +61,4 @@ builder
   .catch(function(err) {
     console.log('Build error\n');
     console.log(err);
-});
+  });

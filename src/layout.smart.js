@@ -4,9 +4,9 @@ import 'angular-ui/ui-router';
 import './layout.smart.css!';
 
 import layoutHtml from './layout.smart.html!text';
-import headerHtml from  './partials/header.tpl.html!text';
-import footerHtml from  './partials/footer.tpl.html!text';
-import navigationHtml from  './partials/navigation.tpl.html!text';
+import headerHtml from './partials/header.tpl.html!text';
+import footerHtml from './partials/footer.tpl.html!text';
+import navigationHtml from './partials/navigation.tpl.html!text';
 
 import ComponentCtrl from './Ctrl.js';
 
@@ -17,6 +17,14 @@ import ComponentCtrl from './Ctrl.js';
 const component = angular.module('componentName.home', [
   'ui.router'
 ]);
+
+component.run(($templateCache) => {
+  "use strict";
+  $templateCache.removeAll();
+  $templateCache.put('layoutSmart.headerHtml', headerHtml);
+  $templateCache.put('layoutSmart.footerHtml', footerHtml);
+  $templateCache.put('layoutSmart.navigationHtml', navigationHtml);
+});
 
 component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterProvider) => {
   /**
@@ -33,28 +41,39 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
       views: {
         layout: {
           template: layoutHtml
-        }
-      }
-    })
-    .state('layout.app', {
-      url: '/layout-smart',
-      views: {
+        },
         "content@layout": {
           template: "<div ui-view></div>"
         },
         "header@layout": {
-          template: headerHtml
+          template: ' | Header Template'
         },
         "footer@layout": {
-          template: footerHtml
+          template: ' | Footer Template'
         },
         "navigation@layout": {
-          template: navigationHtml
+          template: ' | Navigation Template'
         },
         "shortcut@layout": {
           template: ''
         }
       }
+    })
+    .state('layout.app', {
+      url: '/layout-smart',
+      template: 'Asd'
+    })
+    .state('layout.qwe', {
+      url: '/qwe',
+      views: {
+        "content": {
+          template: 'Qwe',
+        },
+        "header@layout": {
+          template: ' | 666'
+        }
+      }
+
     });
 
   $locationProvider.html5Mode({
@@ -77,6 +96,15 @@ component.component('home', {
   //,controller: ComponentCtrl
 });
 
+component.directive('includeReplace', function () {
+  return {
+    require: 'ngInclude',
+    restrict: 'A', /* optional */
+    link: function (scope, el, attrs) {
+      el.replaceWith(el.children());
+    }
+  };
+});
 
 component.component('home2', {
   template: '<h1>Home @@@@</h1><p>Hello, {{ $ctrl.user.name }} !</p>',

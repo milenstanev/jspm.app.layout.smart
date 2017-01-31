@@ -1,14 +1,13 @@
 <!-- HEADER -->
 <!--<div data-smart-include="app/layout/partials/header.tpl.html" class="placeholder-header"></div>-->
-<div data-ui-view="header" data-autoscroll="false"></div>
+<div ng-include src="'layoutSmart.headerHtml'" include-replace></div>
 <!-- END HEADER -->
 
 
 <!-- Left panel : Navigation area -->
 <!-- Note: This width of the aside area can be adjusted through LESS variables -->
 <!--<div data-smart-include="app/layout/partials/navigation.tpl.html" class="placeholder-left-panel"></div>-->
-<div data-ui-view="navigation" data-autoscroll="false"></div>
-
+<div ng-include src="'layoutSmart.navigationHtml'" include-replace></div>
 <!-- END NAVIGATION -->
 
 <!-- MAIN PANEL -->
@@ -44,7 +43,7 @@
 
 <!-- PAGE FOOTER -->
 <!--<div data-smart-include="app/layout/partials/footer.tpl.html"></div>-->
-<div data-ui-view="footer" data-autoscroll="false"></div>
+<div ng-include src="'layoutSmart.footerHtml'" include-replace></div>
 
 <!--<div data-smart-include="app/layout/shortcut/shortcut.tpl.html"></div>-->
 <div data-ui-view="shortcut" data-autoscroll="false"></div>

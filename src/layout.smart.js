@@ -40,26 +40,26 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
       abstract: true,
       views: {
         layout: {
-          template: layoutHtml // The main diffrence between satest layout.smart in layout ...
+          template: layoutHtml
         },
-        "content@layout": {
+        "content": {
           template: "<div ui-view></div>"
         },
-        "header@layout": {
+        "header": {
           template: ' | Header Template'
         },
-        "footer@layout": {
+        "footer": {
           template: ' | Footer Template'
         },
-        "navigation@layout": {
+        "navigation": {
           template: ' | Navigation Template'
         },
-        "shortcut@layout": {
+        "shortcut": {
           template: ''
         }
       }
     })
-    .state('layout.app', {
+    /*.state('layout.app', {
       url: '/layout-smart',
       template: 'Asd'
     })
@@ -73,8 +73,7 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
           template: ' | 666'
         }
       }
-
-    });
+    })*/;
 
   $locationProvider.html5Mode({
     enabled: false,
@@ -86,7 +85,7 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
   /**
    * @desc During implementation have to be overwritten
    */
-  let defaultRoute = $urlRouterProvider.otherwise('/layout-smart/qwe');
+  let defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
 
   return defaultRoute;
 });

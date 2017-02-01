@@ -12,8 +12,8 @@
 <script src="config.js"></script>
 <script>
   System.import('angular').then(function () {
-    //System.import('./src/layout.smart').then(function (reference) {
-    System.import('./dist/index.dist').then(function (reference) {
+    System.import('./src/layout.smart').then(function (reference) {
+    //System.import('./dist/index.dist').then(function (reference) {
       angular.bootstrap(document.body, [
         reference.default.name
       ]);

@@ -158,7 +158,7 @@ $__System.register('12', ['11', '13', '14', 'b', 'c', 'd', 'e', 'f'], function (
          *  - If is necessary to be added extra state placeholder,
          *    I'll prefer to create additional template with attention in bundling in order to have some kind of shared dependencies, for example both templates will use same "ui.router" .etc
          */
-        $stateProvider.state('layout', {
+        $stateProvider.state('layoutSmart', {
           abstract: true,
           views: {
             layout: {
@@ -182,33 +182,32 @@ $__System.register('12', ['11', '13', '14', 'b', 'c', 'd', 'e', 'f'], function (
           }
         });
 
-        /*.state('layout.app', {
-          url: '/layout-smart',
-          template: 'Asd'
-        })
-        .state('layout.qwe', {
-          url: '/qwe',
-          views: {
-            "content": {
-              template: 'Qwe',
-            },
-            "header@layout": {
-              template: ' | 666'
+        /*$stateProvider
+          .state('layoutSmart.app', {
+            url: '/layout-smart',
+            template: 'Asd'
+          })
+          .state('layoutSmart.qwe', {
+            url: '/qwe',
+            views: {
+              "content": {
+                template: 'Qwe',
+              },
+              "header@layout": {
+                template: ' | 666'
+              }
             }
-          }
-        })*/$locationProvider.html5Mode({
+          })
+         $locationProvider.html5Mode({
           enabled: false,
           requireBase: false
         });
-
-        $httpProvider.useApplyAsync(true);
-
-        /**
+         $httpProvider.useApplyAsync(true);
+         /!**
          * @desc During implementation have to be overwritten
-         */
-        var defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
-
-        return defaultRoute;
+         *!/
+        let defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
+         return defaultRoute;*/
       });
 
       component.component('home', {

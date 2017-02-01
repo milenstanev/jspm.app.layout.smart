@@ -40,7 +40,7 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
       abstract: true,
       views: {
         layout: {
-          template: layoutHtml
+          template: layoutHtml // The main diffrence between satest layout.smart in layout ...
         },
         "content@layout": {
           template: "<div ui-view></div>"
@@ -86,7 +86,7 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
   /**
    * @desc During implementation have to be overwritten
    */
-  let defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
+  let defaultRoute = $urlRouterProvider.otherwise('/layout-smart/qwe');
 
   return defaultRoute;
 });

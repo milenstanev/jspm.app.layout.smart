@@ -162,7 +162,7 @@ $__System.register('12', ['11', '13', '14', 'b', 'c', 'd', 'e', 'f'], function (
           abstract: true,
           views: {
             layout: {
-              template: layoutHtml
+              template: layoutHtml // The main diffrence between satest layout.smart in layout ...
             },
             "content@layout": {
               template: "<div ui-view></div>"
@@ -206,7 +206,7 @@ $__System.register('12', ['11', '13', '14', 'b', 'c', 'd', 'e', 'f'], function (
         /**
          * @desc During implementation have to be overwritten
          */
-        var defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
+        var defaultRoute = $urlRouterProvider.otherwise('/layout-smart/qwe');
 
         return defaultRoute;
       });

@@ -6,6 +6,7 @@
   "main": "dist/index.dist.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node util/dist.js",
     "postinstall": "./node_modules/.bin/jspm install -y",
     "jspm-link": "./node_modules/.bin/jspm link -y",
     "jspm-update": "./node_modules/.bin/jspm update && ./node_modules/.bin/jspm clean"

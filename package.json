@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "registry": "github",
+  "repository": "https://github.com/milenstanev/jspm.app.layout.smart.git",
   "main": "dist/index.dist.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

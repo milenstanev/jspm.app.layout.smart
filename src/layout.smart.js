@@ -36,60 +36,14 @@ component.config(($stateProvider, $locationProvider, $httpProvider, $urlRouterPr
    *    I'll prefer to create additional template with attention in bundling in order to have some kind of shared dependencies, for example both templates will use same "ui.router" .etc
    */
   $stateProvider
-    .state('layoutSmart', {
+    .state('layout', {
       abstract: true,
       views: {
         layout: {
           template: layoutHtml
-        },
-        "content": {
-          template: "<div ui-view></div>"
-        },
-        "header": {
-          template: ' | Header Template'
-        },
-        "footer": {
-          template: ' | Footer Template'
-        },
-        "navigation": {
-          template: ' | Navigation Template'
-        },
-        "shortcut": {
-          template: ''
         }
       }
     });
-
-  /*$stateProvider
-    .state('layoutSmart.app', {
-      url: '/layout-smart',
-      template: 'Asd'
-    })
-    .state('layoutSmart.qwe', {
-      url: '/qwe',
-      views: {
-        "content": {
-          template: 'Qwe',
-        },
-        "header@layout": {
-          template: ' | 666'
-        }
-      }
-    })
-
-  $locationProvider.html5Mode({
-    enabled: false,
-    requireBase: false
-  });
-
-  $httpProvider.useApplyAsync(true);
-
-  /!**
-   * @desc During implementation have to be overwritten
-   *!/
-  let defaultRoute = $urlRouterProvider.otherwise('/layout-smart');
-
-  return defaultRoute;*/
 });
 
 component.component('home', {

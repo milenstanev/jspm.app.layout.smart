@@ -50,7 +50,7 @@ builder
     `${baseUrl}/dist/index.dist.js`,
     {
       minify: false,
-      sourceMaps: true,
+      sourceMaps: false,
       mangle: false,
       format: 'umd',
       runtime: false

@@ -13,6 +13,7 @@ System.config({
   },
 
   map: {
+    "FortAwesome/Font-Awesome": "github:FortAwesome/Font-Awesome@4.7.0",
     "angular": "github:angular/bower-angular@1.6.1",
     "angular-ui/ui-router": "github:angular-ui/ui-router@0.4.2",
     "babel": "npm:babel-core@5.8.38",
